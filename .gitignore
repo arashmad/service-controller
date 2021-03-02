@@ -1,0 +1,8 @@
+node_modules/
+README.md
+backend/data/bat
+backend/logs
+backend/node_modules/
+build/
+.health//
+yarn.lock

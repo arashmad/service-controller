@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'Vazir-FD';
+	src: url('../fonts/vazir/Vazir-FD.woff')
+}
+
+@font-face {
+	font-family: 'IranSans';
+	src: url('../fonts/iransans/IRANSansWeb.woff2')
+}
+
+html, body {
+	direction: rtl !important;
+	/* font-family: 'IranSans'; */
+	font-family: 'Vazir-FD';
+}
+
+button:focus {
+	outline: 0;
+}
+
+img.size-m {
+	width: 24px;
+	height: 24px;
+}
+
+th, tr {
+	text-align: center;
+}
+
+.banned {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .4);
+	z-index: 1000;
+}
+
+.banned-message {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ff9800;
+	display: none;
+}
+
+.service-logo {
+	margin-left: 8px;
+}
+
+/* .dot {
+	height: 23px;
+	width: 23px;
+	border-radius: 50%;
+	display: inline-block;
+}
+.dot.running {
+	background-color: #25ae88;
+}
+.dot.stopped {
+	background-color: #d75a4a;
+}
+.dot.error {
+	background-color: #ff9800;
+} */
+
+.md-text-success {
+	color: #25ae88;
+}
+
+.md-text-error {
+	color: #d75a4a;
+}
+
+.md-text-warning {
+	color: #ff9800;
+}
+
+.md-text-muted {
+	color: #444444;
+}
+
+.blink {
+	-webkit-animation: fadein 1.2s ease-in alternate infinite;
+	-moz-animation: fadein 1.2s ease-in alternate infinite;
+	animation: fadein 1.2s ease-in alternate infinite;
+}
+
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadein {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
